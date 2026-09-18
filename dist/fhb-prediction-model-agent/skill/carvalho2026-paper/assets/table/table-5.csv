@@ -1,0 +1,12 @@
+**Metric**<sup>**a**</sup>,**LOYO (Year)**,**LOLO (Location)**
+Total folds,20,21
+Folds with both,15,9
+classes,,
+ROC- AUC (mean),0.75,0.83
+ROCAUC (median),0.76,0.82
+PR- AUC (mean),0.86,0.75
+PR- AUC (median),0.86,0.95
+Brier score (mean),0.17,0.18
+Sensitivity (mean),0.76,0.81
+Specificity (mean),0.85,0.83
+Accuracy (mean),0.80,0.81

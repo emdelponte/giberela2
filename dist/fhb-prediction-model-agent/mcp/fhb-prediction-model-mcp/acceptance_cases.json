@@ -1,0 +1,85 @@
+[
+  {
+    "name": "calculate_weather_predictors_basic",
+    "tool": "calculate_weather_predictors",
+    "arguments": {
+      "daily_records": [
+        {"relative_day": 0, "tmin": 11.0, "rh": 75.0, "dew": 10.0, "prec": 0.0},
+        {"relative_day": 1, "tmin": 11.5, "rh": 76.0, "dew": 10.5, "prec": 0.0},
+        {"relative_day": 2, "tmin": 12.0, "rh": 78.0, "dew": 11.0, "prec": 0.0},
+        {"relative_day": 3, "tmin": 12.5, "rh": 79.0, "dew": 11.5, "prec": 0.0},
+        {"relative_day": 4, "tmin": 13.0, "rh": 80.0, "dew": 12.0, "prec": 0.0},
+        {"relative_day": 5, "tmin": 13.5, "rh": 82.0, "dew": 12.5, "prec": 0.0},
+        {"relative_day": 6, "tmin": 14.0, "rh": 84.0, "dew": 13.0, "prec": 5.0},
+        {"relative_day": 7, "tmin": 14.5, "rh": 85.0, "dew": 13.5, "prec": 10.0},
+        {"relative_day": 8, "tmin": 15.0, "rh": 86.0, "dew": 14.0, "prec": 0.0},
+        {"relative_day": 9, "tmin": 15.5, "rh": 88.0, "dew": 14.5, "prec": 0.0},
+        {"relative_day": 10, "tmin": 16.0, "rh": 90.0, "dew": 15.0, "prec": 0.0}
+      ]
+    },
+    "expected_subset": {
+      "tmin": 14.0,
+      "dew": 13.5,
+      "rh": 85.83,
+      "prec2": 15.0,
+      "prec": 1,
+      "rh2": 3
+    }
+  },
+  {
+    "name": "predict_fhb_logistic_moderate_risk",
+    "tool": "predict_fhb_logistic",
+    "arguments": {
+      "tmin": 12.0,
+      "rh": 78.0,
+      "dew": 13.0,
+      "prec2": 15.0
+    },
+    "expected_subset": {
+      "LM1_pred": 0,
+      "LM2_pred": 0,
+      "LM3_pred": 0
+    }
+  },
+  {
+    "name": "predict_fhb_ensemble_high_risk",
+    "tool": "predict_fhb_ensemble",
+    "arguments": {
+      "tmin": 14.5,
+      "rh": 86.0,
+      "dew": 15.0,
+      "prec2": 35.0
+    },
+    "expected_subset": {
+      "ensemble_majority_vote": 1,
+      "ensemble_stacked_pred": 1,
+      "risk_category": "HIGH"
+    }
+  },
+  {
+    "name": "calculate_economic_benefit_high_risk",
+    "tool": "calculate_economic_benefit",
+    "arguments": {
+      "predicted_risk": 0.70
+    },
+    "expected_subset": {
+      "predicted_risk": 0.7,
+      "recommendation": "APPLY_FUNGICIDE"
+    }
+  },
+  {
+    "name": "fetch_weather_nasa_passo_fundo",
+    "tool": "fetch_weather_nasa",
+    "arguments": {
+      "latitude": -28.25,
+      "longitude": -52.40,
+      "flowering_date": "2023-09-08",
+      "days_before": 1,
+      "days_after": 1
+    },
+    "expected_subset": {
+      "status": "success",
+      "total_days": 3
+    }
+  }
+]
