@@ -1,0 +1,23 @@
+State,Location,Years,Number of epidemics,Number of outbreaks (S > 10%)
+RS,Água Santa,2014,1,0
+RS,Bagé,2014,1,0
+PR,Campo Mourão,"2023, 2024",2,1
+RS,Capão Bonito do Sul,"2012, 2013",2,0
+RS,Capão do Leão,2024,1,1
+PR,Castro,2011,1,1
+RS,Condor,2011,1,0
+RS,Coxilha,2023,1,1
+RS,Cruz Alta,"2009, 2023, 2024",3,1
+RS,Giruá,2013,2,1
+PR,Guarapuava,"2014, 2015, 2017, 2018, 2020-2023",9,7
+RS,Jaboticaba,"2022, 2023, 2024",3,2
+SC,Lages,2011,1,0
+RS,Lagoa Vermelha,2009,1,1
+PR,Londrina,"2014, 2016",2,2
+RS,Muitos Capões,2009,1,1
+PR,Palmeira,2014-2024,12,3
+RS,Passo Fundo,"1998-2001, 2003, 2009, 2011-2024",48,17
+RS,Pelotas,"2017, 2018",2,0
+RS,Ponta Grossa,"2011, 2012, 2014, 2020-2024",10,4
+RS,Santa Bárbara do Sul,2020-2024,6,2
+Total,,,125,45

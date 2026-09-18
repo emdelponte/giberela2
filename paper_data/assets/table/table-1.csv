@@ -1,0 +1,31 @@
+"**Variable**
+**acronym**",**Definition**,**Source**
+RH,"Average daily relative
+humidity (%)","BR- DWGD and
+NASA POWER"
+Tmax,"Average daily maximum
+temperature (°C)","BR- DWGD and
+NASA POWER"
+Tmin,"Average daily minimum
+temperature (°C)","BR- DWGD and
+NASA POWER"
+Tmean,"Average daily mean
+temperature (°C)","BR- DWGD and
+NASA POWER"
+Rain,"Accumulated
+precipitation (mm)",NASA POWER
+Trange,"Difference between
+average daily max. and
+min. temperatures (°C)","BR- DWGD and
+NASA POWER"
+Vpd,"Vapour pressure
+deficit (kPa)","BR- DWGD and
+NASA POWER"
+Tdew,"Dew point
+temperature (°C)",NASA POWER
+ND.Rain.5,"Number of days with
+total precipitation
+exceeding 5 mm",NASA POWER
+ND.RH.85,"Number of days with
+relative humidity
+above 85%",NASA POWER

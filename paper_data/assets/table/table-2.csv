@@ -1,0 +1,6 @@
+**Parameter**,**Distribution/value**,**Mean (or fixed value)**,**SD**,**Source/note**
+E<sup>a</sup>,Beta,41%,5%,Machado et al. (2017)
+C<sup>b</sup>,Truncated normal,28.3 US$ ha<sup>−1</sup>,3.8 US$ ha<sup>−1</sup>,September 2025 estimate
+P<sup>c</sup>,Normal,0.21 US$ kg<sup>−1</sup>,0.1 US$ kg<sup>−1</sup>,September 2025 estimate
+S<sup>d</sup>,"Kernel weighted resampling
+with Gaussian kernel (_Kh_)<sup>e</sup>",_h_= 0.06,,This study
